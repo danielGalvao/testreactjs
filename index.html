@@ -15,8 +15,16 @@
         render: function () {
           return (
             <div>
-              <h2>Hello Word!</h2>
+              <h2>Hello World!</h2>
+              <Tool name="ReactJS"/>
             </div>
+          );
+        }
+      });
+      var Tool = React.createClass({
+        render: function (name) {
+          return (
+            <p>Usando a ferramenta {this.props.name}</p
           );
         }
       });
